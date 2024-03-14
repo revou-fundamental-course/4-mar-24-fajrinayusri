@@ -170,6 +170,30 @@ button:active {
   #footer p {
     font-weight: bold;
     margin-top: -5px;
-    margin-bottom: -5px;
   }
   
+ #footer ul li {
+    display: inline-block;
+    align-items: end;
+ } 
+ 
+ .fab {
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: left;
+    color: #bd534c;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #bd534c, #e6c5c2 50%, #f6eeea 50%);
+    background-size: 250%;
+    background-position: 100% 100%;
+    transition: background 0.5s;
+  }
+
+ .fa-instagram:hover, .fa-twitter:hover, .fa-discord:hover, .fa-linkedin:hover, .fa-github:hover {
+    color: #f6eeea;
+    background-position: 0% 0%;
+ }
