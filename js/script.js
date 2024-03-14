@@ -19,7 +19,7 @@ var age = document.getElementById("age");
                 p.push("male");
             } else if (female.checked) {
                 p.push("female");
-            }
+            } console.log(p)
 
             var bmi = Number(p[2]) / (Number(p[1]) / 100 * Number(p[1]) / 100);
             var result = '';
@@ -34,7 +34,7 @@ var age = document.getElementById("age");
                 result = 'Obese';
             } else if (35 <= bmi) {
                 result = 'Extremely Obese';
-            }
+            } console.log(bmi)
 
             resultArea.style.display = "block";
             document.querySelector(".comment").innerHTML = `You are <span id="comment">${result}</span>`;
@@ -50,9 +50,9 @@ var age = document.getElementById("age");
             } else if (18.5 <= bmi && bmi <= 24.9) {
                 result = 'Kamu termasuk dalam kategori ideal. Tetap jaga pola makan dan kesehatanmu yaa';
             } else if (25 <= bmi && bmi <= 29.9) {
-                result = 'Kamu termasuk dalam kategori overweight. Segera konsultasikan ke dokter mengenai pola makan gizi yang baik dan juga olahraga teratur';
+                result = 'Kamu termasuk dalam kategori overweight. Coba untuk lakukan pola hidup sehat dan olahraga teratur';
             } else if (30 <= bmi && bmi <= 34.9) {
-                result = 'Kamu termasuk dalam kategori obesitas. Segera konsultasikan ke dokter mengenai pola diet yang sehat';
+                result = 'Kamu termasuk dalam kategori obesitas. Coba untuk lakukan pola hidup sehat dan olahraga teratur';
             } else if (35 <= bmi) {
                 result = 'Kamu termasuk dalam kategori obesitas ekstrim. Segera konsultasikan ke dokter mengenai pola diet yang sehat untuk meningkatkan kesehatanmu';
             }

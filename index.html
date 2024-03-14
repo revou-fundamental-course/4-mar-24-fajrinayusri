@@ -2,6 +2,7 @@
     <head>
         <title>Calculator BMI</title>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css"/>
 
         <body>
@@ -17,21 +18,21 @@
                         <section class="container-form">
                             <form>
                                 <div>
-                                    <label>Jenis Kelamin</label><br />
+                                    <label for="age">Usia (tahun)<br />
+                                    <input type="number" class="form-item" id="age" required></label>
+                                </div>
+                                <div>
+                                    <label for="height">Tinggi Badan (cm)<br />
+                                    <input type="number" class="form-item" id="height" required></label>
+                                </div>
+                                <div>
+                                    <label for="weight">Berat Badan (kg)<br />
+                                    <input type="number" class="form-item" id="weight" required></label>
+                                </div>
+                                <div>
+                                    <label class="custom-radio">Jenis Kelamin<br />
                                     <input type="radio" name="gender" id="male" value="laki-laki">Laki-Laki
-                                    <input type="radio" name="gender" id="female" value="perempuan">Perempuan
-                                </div>
-                                <div>
-                                    <label for="weight">Berat Badan (kg)</label><br />
-                                    <input type="number" class="form-item" id="weight" required>
-                                </div>
-                                <div>
-                                    <label for="height">Tinggi Badan (cm)</label><br />
-                                    <input type="number" class="form-item" id="height" required>
-                                </div>
-                                <div>
-                                    <label for="age">Usia (tahun)</label><br />
-                                    <input type="number" class="form-item" id="age" required>
+                                    <input type="radio" name="gender" id="female" value="perempuan">Perempuan</label>
                                 </div>
             
                                 <div>
@@ -61,13 +62,17 @@
                         </section>
 
                         <h3>Perhatian!</h3>
-                        <p style="text-align: justify;">Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter</p>
+                        <p style="text-align: justify; margin-top: -10px;">Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
                     </div>
                 </div>
             </main>
 
             
-            <footer></footer>
+            <footer id="footer">
+                <div>
+                    <p>Copyright &copy; 2024 Fajrina Yusri</p>
+                </div>
+            </footer>
         </body>
 
         <script src="js/script.js"></script>
